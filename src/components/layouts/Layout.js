@@ -1,15 +1,15 @@
 import React from 'react';
-import Aux from '../../hoc/Aux';
+import AuxElement from '../../hoc/AuxElement';
 import classes from './Layout.css';
 import Toolbar from '../../components/toolbar/Toolbar';
 const layout = ( props ) => {
     return (
-     <Aux>
+     <AuxElement>
     <Toolbar />
      <main className = {classes.Content} >
          {props.children}
      </main>
-     </Aux>
+     </AuxElement>
 
     );
 }
